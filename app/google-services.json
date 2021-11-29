@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "840331064124",
+    "project_id": "androidproject-1454a",
+    "storage_bucket": "androidproject-1454a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840331064124:android:16d25a831ed6433501a439",
+        "android_client_info": {
+          "package_name": "com.example.philomathy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840331064124-k2bkduva1mdtmcb1867v1vvblpohpdji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu30zk0X-qfDSliZtaxPT7yLQXJJ7nP20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840331064124-k2bkduva1mdtmcb1867v1vvblpohpdji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
