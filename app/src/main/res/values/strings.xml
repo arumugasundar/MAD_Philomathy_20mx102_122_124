@@ -40,5 +40,18 @@
     <string name="already_have_an_account">Already have an account?</string>
     <string name="title_activity_sample">sample</string>
     <string name="logout">Logout</string>
+    <string name="Choose_Tag">Choose Tag</string>
+    <string name="dropdowntext">Choose Topic</string>
+    <string name="select_category">Select Category</string>
+    <string name="add_post">Add Post</string>
+    <string name="choose_topic">Choose Topic</string>
+
+    <string-array name="tags">
+        <item>Programming Language</item>
+        <item>Hardware Architecture</item>
+        <item>Web Development</item>
+        <item>Interview</item>
+        <item>Others</item>
+    </string-array>
 
 </resources>

@@ -9,5 +9,4 @@ class Posts(
     @get:PropertyName("creationtime") @set:PropertyName("creationtime") var creationtime: Long = 0,
     var user: Users? = null,
     var title: String = "",
-
     )

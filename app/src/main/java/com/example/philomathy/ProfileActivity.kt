@@ -17,6 +17,7 @@ class ProfileActivity : PostsActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
+        /* Log Out */
         if(item.itemId == R.id.menu_logout)
         {
             FirebaseAuth.getInstance().signOut()

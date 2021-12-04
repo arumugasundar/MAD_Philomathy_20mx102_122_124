@@ -5,10 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isEmpty
@@ -47,6 +44,11 @@ class UploadActivity : AppCompatActivity() {
 
         title = findViewById(R.id.textTitle)
 
+
+        val topic = resources.getStringArray(R.array.tags)
+        val arrayAdapter = ArrayAdapter(this, R.layout.dropdown_item, topic)
+        val autocompleteTV = findViewById<AutoCompleteTextView>(R.id.autoCompleteTextview)
+        autocompleteTV.setAdapter(arrayAdapter)
 
         val drawerLayout : DrawerLayout = findViewById(R.id.drawerLayout)
         val navView : NavigationView = findViewById(R.id.navView)
@@ -88,6 +90,7 @@ class UploadActivity : AppCompatActivity() {
         }
 
 
+        Log.i(" Title", title.toString())
         storageReference = FirebaseStorage.getInstance().reference
         firestoreDb = FirebaseFirestore.getInstance()
         firestoreDb.collection("users")
@@ -164,9 +167,7 @@ class UploadActivity : AppCompatActivity() {
               //  etDescription.editText?.text.clear()
                 imageView.setImageResource(0)
                 Toast.makeText(this, "Success!", Toast.LENGTH_SHORT).show()
-//                val profileIntent = Intent(this, ProfileActivity::class.java)
-//                profileIntent.putExtra(EXTRA_USERNAME, signedInUser?.username)
-               // startActivity(profileIntent)
+
                 finish()
             }
     }
